@@ -65,6 +65,10 @@ const homeContentSchema = new mongoose.Schema(
       type: [
         {
           subtitle: { type: String, default: "" },
+          // Brand logo shown inside the badge above the title (above `subtitle`).
+          // Uploaded from the admin panel and stored as an /uploads/... path,
+          // same pattern as every other image field on this schema.
+          badgeLogo: { type: String, default: "" },
           title: { type: String, default: "" },
           desc: { type: String, default: "" },
           cta: { type: String, default: "Explore All" },
@@ -75,6 +79,7 @@ const homeContentSchema = new mongoose.Schema(
       default: [
         {
           subtitle: "SUNGROW",
+          badgeLogo: "",
           title: "Enhance your energy efficiency and profit with our cutting edge products.",
           desc: "Maximize solar performance with Sungrow's efficient, reliable inverters.",
           cta: "Explore All",
@@ -83,6 +88,7 @@ const homeContentSchema = new mongoose.Schema(
         },
         {
           subtitle: "ALPSOLAR",
+          badgeLogo: "",
           title: "Commercial & Industrial One-Fits-All Solution",
           desc: "Commercial & Industrial Solar Solutions Built for Performance",
           cta: "Explore All",
@@ -91,6 +97,7 @@ const homeContentSchema = new mongoose.Schema(
         },
         {
           subtitle: "GOODWE",
+          badgeLogo: "",
           title: "Comfort and savings with Goodwe residential inverters",
           desc: "Comfort, Savings, and Reliable Power with GoodWe Inverters",
           cta: "Explore All",
@@ -99,6 +106,7 @@ const homeContentSchema = new mongoose.Schema(
         },
         {
           subtitle: "SOLIS",
+          badgeLogo: "",
           title: "Need Reliability? Try Solis Inverters",
           desc: "Reduce carbon emissions your environmental footprint with clean renewable biogas energy.",
           cta: "Explore All",
@@ -107,6 +115,7 @@ const homeContentSchema = new mongoose.Schema(
         },
         {
           subtitle: "PYLONTECH",
+          badgeLogo: "",
           title: "Commercial & Industrial One-Fits-All Solution",
           desc: "Reduce carbon emissions your environmental footprint with clean renewable biogas energy.",
           cta: "Explore All",
