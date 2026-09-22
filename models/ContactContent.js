@@ -16,6 +16,7 @@ const contactContentSchema = new mongoose.Schema(
         default:
           "Have a question about our products or need help choosing the right solar solution? Our team is here to help.",
       },
+      heroImage: { type: String, default: "/goodwebg.jpg" },
     },
 
     info: {
