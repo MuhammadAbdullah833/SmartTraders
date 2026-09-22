@@ -16,6 +16,7 @@ import contactMessageRoutes from "./routes/contactMessageRoutes.js";
 import homeContentRoutes from "./routes/homeContentRoutes.js";
 import aboutContentRoutes from "./routes/aboutContentRoutes.js";
 import contactContentRoutes from "./routes/contactContentRoutes.js";
+import newsContentRoutes from "./routes/newsContentRoutes.js";
 import footerContentRoutes from "./routes/footerContentRoutes.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -44,6 +45,7 @@ app.use("/api/contact-messages", contactMessageRoutes);
 app.use("/api/home-content", homeContentRoutes);
 app.use("/api/about-content", aboutContentRoutes);
 app.use("/api/contact-content", contactContentRoutes);
+app.use("/api/news-content", newsContentRoutes);
 app.use("/api/footer-content", footerContentRoutes);
 app.use("/api/stats", statsRoutes);
 
