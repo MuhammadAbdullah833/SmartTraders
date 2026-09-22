@@ -12,6 +12,7 @@ const homeContentSchema = new mongoose.Schema(
       titleLine1: { type: String, default: "Shaping" },
       titleHighlight: { type: String, default: "Sustainable" },
       titleLine3: { type: String, default: "Future Today" },
+      bgImage: { type: String, default: "/mainbanner.png" },
       thumbImage: { type: String, default: "/f.png" },
       bottomText: {
         type: String,
